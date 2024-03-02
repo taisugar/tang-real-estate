@@ -1,0 +1,38 @@
+@layer components {
+  .header-nav {
+    @apply text-black/60 mt-2;
+  }
+  .mobile-menu {
+    @apply lg:ml-3 inline-flex items-center p-2 text-white lg:hidden md:hidden md:mr-auto;
+  }
+  .header-nav {
+    .header-nav--menu-container {
+      @apply absolute left-0 w-full md:relative md:block md:w-auto lg:relative lg:block lg:w-auto;
+    }
+  }
+  .header-nav--menu {
+    @apply my-2 md:gap-[40px] lg:gap-[71px] flex flex-col border border-gray-100 bg-gray-50 p-4 font-semibold md:my-0 md:mt-0 md:flex-row md:border-0 md:bg-transparent md:p-0 lg:my-0 lg:mt-0 lg:flex-row lg:border-0 lg:bg-transparent lg:p-0;
+
+    &-item:after {
+      display: block;
+      content: "";
+      width: inherit;
+      border-bottom: solid 2px black;
+      transform: scaleX(0);
+      transition: transform 250ms ease-in-out;
+    }
+
+    &-item:hover:after {
+      transform: scaleX(1);
+    }
+  }
+  .menu-item--link {
+    @apply block duration-300 rounded py-2 pl-3 pr-4 transition-colors  md:bg-transparent md:p-0 text-black text-lg md:hover:underline;
+    &.active {
+      @apply bg-primary-50 text-white lg:bg-white;
+    }
+    &:hover {
+      text-decoration-line: none;
+    }
+  }
+}

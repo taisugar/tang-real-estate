@@ -1,0 +1,47 @@
+//General style
+@layer base {
+  html,
+  body {
+    @apply antialiased m-0 p-0;
+    font-family: var(--GMVDINPro-font);
+    font-display: swap;
+    scroll-behavior: smooth;
+    min-height: -webkit-fill-available;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  input:disabled {
+    box-shadow: inset 0 1px 3px 0 #d8d8d8;
+    background-color: rgba(233, 233, 233, 0.49);
+  }
+
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input[type="range"]::-webkit-slider-thumb {
+    pointer-events: all;
+    width: 16px;
+    height: 16px;
+    -webkit-appearance: none;
+  }
+
+  button:focus {
+    outline: none;
+  }
+}
+
+.hover-effect:hover {
+  @apply transform duration-300 ease-in-out scale-110;
+  filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+}
