@@ -4,8 +4,8 @@ import { useRef } from "react";
 
 const navigation = [
   { label: "Giới Thiệu", href: "#intro" },
-  { label: "Tổng Quan", href: "#overview" }
-  // { label: "Pricing", href: "#pricing" },
+  { label: "Tổng Quan", href: "#overview" },
+  { label: "Mặt Bằng", href: "#layout" }
   // {
   //   label: "Contact",
   //   href: "",

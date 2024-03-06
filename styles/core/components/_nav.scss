@@ -17,7 +17,7 @@
       display: block;
       content: "";
       width: inherit;
-      border-bottom: solid 2px black;
+      border-bottom: solid 2px #fff;
       transform: scaleX(0);
       transition: transform 250ms ease-in-out;
     }
@@ -27,12 +27,32 @@
     }
   }
   .menu-item--link {
-    @apply block duration-300 rounded py-2 pl-3 pr-4 transition-colors  md:bg-transparent md:p-0 text-black text-lg md:hover:underline;
+    @apply block duration-300 rounded py-2 pl-3 pr-4 transition-colors md:bg-transparent md:p-0 text-white text-lg md:hover:underline;
     &.active {
       @apply bg-primary-50 text-white lg:bg-white;
     }
     &:hover {
       text-decoration-line: none;
+    }
+  }
+
+  .header-scrolled {
+    .header-nav--menu-item:after {
+      border-color: #000;
+    }
+    .menu-item--link {
+      @apply text-black/80;
+    }
+
+    .logo {
+      @apply bg-transparent bg-none;
+
+      img {
+        background-color: transparent;
+      }
+    }
+    .logo-title {
+      color: #000;
     }
   }
 }

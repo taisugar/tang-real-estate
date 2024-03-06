@@ -1,0 +1,15 @@
+@property --num-apartment {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+
+.counter-apartment {
+  --num-apartment: attr(data-counter);
+  transition: --num-apartment 5s;
+  counter-set: num var(--num-apartment);
+}
+
+.counter-apartment::after {
+  content: counter(num);
+}

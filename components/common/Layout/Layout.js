@@ -6,7 +6,7 @@ export const Layout = ({ children, className = "" }) => {
     <main
       className={`scroll-smooth relative overflow-hidden ${
         className && className
-      }  `}
+      }`}
     >
       <Header />
       {children}

@@ -55,7 +55,7 @@ export const IntroSection = () => {
           <div className="lg:pr-[120px]">
             <ContentSection
               vertical
-              badgeContent="EATON PARK"
+              badgeContent="Giới Thiệu về dự án EATON PARK"
               title={
                 <p data-aos="fade-right">
                   TUYỆT TÁC SANG TRỌNG
@@ -69,8 +69,8 @@ export const IntroSection = () => {
                     Xem 360 dự án Eaton Park
                   </strong>
                   <Link
-                    className="btn text-white rounded-full whitespace-nowrap capitalize bg-[#F9F1E8] group"
-                    href="https://eatonpark.com/360-eaton-park/"
+                    className="hover-effect btn text-white rounded-full whitespace-nowrap capitalize bg-[#F9F1E8] group"
+                    href="/vr360"
                   >
                     <Image
                       className="group-hover:mix-blend-plus-lighter"
@@ -140,7 +140,6 @@ export const IntroSection = () => {
             style={{
               transform: `perspective(1000px) rotateX(${position.degreeX}deg) rotateY(${position.degreeY}deg)`
             }}
-            data-aos="zoom-in-up"
           >
             <Slider
               className="w-full"

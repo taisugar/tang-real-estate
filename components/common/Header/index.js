@@ -22,14 +22,23 @@ export const Header = () => {
       >
         <Link
           href="/"
-          className="logo -mb-2 w-[120px] md:w-[200px] animate__animated animate__tada animate__infinite animate__slower"
+          className="logo -mb-2 hover-effect animate__animated animate__pulse animate__infinite animate__slower flex justify-center items-center"
         >
-          <Image
-            width={200}
-            height={100}
-            src={"/images/logo.webp"}
-            alt="logo-image"
-          />
+          <span className="aspect-square overflow-hidden">
+            <Image
+              className="rounded-full p-2 bg-[#ece8e5] w-16 h-16"
+              width={66}
+              height={88}
+              src={"/images/logo.webp"}
+              alt="logo-image"
+            />
+          </span>
+          <p className="ml-1 pr-4 flex flex-col items-center justify-center logo-container -mb-1">
+            <span className="font-bold text-lg logo-title -mb-1">
+              TANG REALTY
+            </span>
+            <span className="logo-text text-sm leading-1 -mt-1">SAIGON</span>
+          </p>
         </Link>
         <div className="header-logo--container">
           <Nav isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} />
