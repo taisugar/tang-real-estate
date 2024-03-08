@@ -1,7 +1,7 @@
 import "@styles/globals.scss";
-import { Inter } from "next/font/google";
-import { Space_Grotesk } from "next/font/google";
+import { Inter, Space_Grotesk } from "next/font/google";
 import localFont from "next/font/local";
+import { useLayoutEffect, useState } from "react";
 
 export const inter = Inter({ subsets: ["latin"] });
 
@@ -33,7 +33,38 @@ const GMVDINPro = localFont({
   display: "swap"
 });
 
+const Loader = () => {
+  // const router = useRouter();
+  // const [isLoading, setIsLoading] = useState(false);
+  // useEffect(() => {
+  //   const handleStart = (url) => url !== router.asPath && setIsLoading(true);
+  //   const handleComplete = (url) =>
+  //     url === router.asPath && setTimeout(() => setIsLoading(false), 1000);
+  //   router.events.on("routeChangeStart", handleStart);
+  //   router.events.on("routeChangeComplete", handleComplete);
+  //   router.events.on("routeChangeError", handleComplete);
+
+  //   return () => {
+  //     router.events.on("routeChangeStart", handleStart);
+  //     router.events.on("routeChangeComplete", handleComplete);
+  //     router.events.on("routeChangeError", handleComplete);
+  //   };
+  // });
+
+  return (
+    <div className="w-screen h-screen flex justify-center items-center">
+      <div className="">loading...</div>
+    </div>
+  );
+};
+
 export default function App({ Component, pageProps }) {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useLayoutEffect(() => {
+    setTimeout(() => setIsLoading(false), 1000);
+  }, []);
+
   return (
     <>
       <style jsx global>{`
@@ -41,7 +72,7 @@ export default function App({ Component, pageProps }) {
           --GMVDINPro-font: ${GMVDINPro.style.fontFamily};
         }
       `}</style>
-      <Component {...pageProps} />
+      {isLoading ? <Loader /> : <Component {...pageProps} />}
     </>
   );
 }

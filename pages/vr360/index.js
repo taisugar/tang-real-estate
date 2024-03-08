@@ -1,6 +1,8 @@
-import Link from "next/link";
+import { useRouter } from "next/router";
 
 export default function VR360Page() {
+  const router = useRouter();
+
   return (
     <section>
       <iframe
@@ -19,12 +21,13 @@ export default function VR360Page() {
           bottom: 0
         }}
       />
-      <Link
+      <button
+        type="button"
         className="px-6 py-2 absolute bg-[red] text-white rounded-xl top-5 left-5 font-bold"
-        href="/"
+        onClick={() => router.back()}
       >
         Trở lại
-      </Link>
+      </button>
     </section>
   );
 }

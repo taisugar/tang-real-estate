@@ -10,29 +10,30 @@ export const HomeBanner = () => {
 
   return (
     <section className="relative">
-      <div className="relative aspect-video">
-        <div className="z-[-1]">
-          <video
-            className="object-cover pointer-events-none"
-            autoPlay
-            loop
-            muted
-            playsInline
-          >
-            <source src="videos/hero-banner.mp4" type="video/mp4" />
-          </video>
-        </div>
+      <div className="z-[-1]">
+        <video
+          className="object-cover pointer-events-none aspect-video"
+          autoPlay
+          loop
+          muted
+          playsInline
+        >
+          <source src="videos/hero-banner.webm" type="video/mp4" />
+        </video>
       </div>
-      <button
-        type="button"
-        className="scroll-down top-[calc(100vh-220px)] lg:top-[calc(100vh-240px)]"
-        onClick={handleClickScroll}
-      >
-        <div className="chevron"></div>
-        <div className="chevron"></div>
-        <div className="chevron"></div>
-        <span className="text">Scroll down</span>
-      </button>
+
+      <div className="hidden md:block absolute left-1/2 -translate-x-1/2 md:bottom-52 lg:bottom-60 z-10">
+        <button
+          type="button"
+          className="scroll-down"
+          onClick={handleClickScroll}
+        >
+          <div className="chevron"></div>
+          <div className="chevron"></div>
+          <div className="chevron"></div>
+          <span className="text">Scroll down</span>
+        </button>
+      </div>
       <SliderSection />
     </section>
   );
