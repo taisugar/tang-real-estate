@@ -1,0 +1,24 @@
+//variables
+$speed: 2.5; //second
+$part-second: 0.25; //second
+$speed: $speed + $part-second * 4;
+$animation-timing: ease-in-out;
+
+#globalLoader {
+  background: linear-gradient(
+    45deg,
+    #b77a50 0,
+    #f9f1e8 25%,
+    #e9c6a6 50%,
+    #69433b 100%
+  );
+  background-size: 600%;
+  background-position: 0% 100%;
+  animation: gradient $speed * 2s $animation-timing infinite;
+}
+
+@keyframes gradient {
+  50% {
+    background-position: 100% 0%;
+  }
+}

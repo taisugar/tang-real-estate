@@ -39,6 +39,20 @@
   button:focus {
     outline: none;
   }
+
+  table {
+    display: table;
+    tr {
+      td {
+        padding: 0.75rem;
+        vertical-align: top;
+        border: 1px solid #dee2e6;
+      }
+      td:first-child {
+        @apply text-left md:text-right;
+      }
+    }
+  }
 }
 
 .hover-effect:hover {
