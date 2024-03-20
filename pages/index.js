@@ -9,6 +9,7 @@ import { TestimonialSection } from "@/components/widgets/TestimonialSection";
 import Head from "next/head";
 
 import { ScrollToTopComponent } from "@/components/common/ScrollToTop";
+import { FABComponent } from "@/components/common/FAB";
 import { AOSPluginsComponent } from "@/components/plugins/AOS.Plugins";
 
 import "animate.css/animate.min.css";
@@ -45,6 +46,7 @@ export default function Home() {
         <TestimonialSection />
       </div>
       <AOSPluginsComponent />
+      <FABComponent />
       <ScrollToTopComponent />
     </Layout>
   );

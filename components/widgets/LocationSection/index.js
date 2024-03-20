@@ -90,13 +90,13 @@ export const LocationSection = () => {
 
         <div
           id="eaton-park-map-1"
-          className="relative aspect-video shadow-lg"
+          className="relative aspect-square md:aspect-video shadow-lg hover-effect"
           data-aos="zoom-in"
         >
           <Link
-            href="/images/location/eaton-park-map-1.webp"
-            data-pswp-width={2240}
-            data-pswp-height={1640}
+            href="/images/location/vision-eatonpark.webp"
+            data-pswp-width={1920}
+            data-pswp-height={915}
             rel="noreferrer"
           >
             <Image
@@ -104,10 +104,22 @@ export const LocationSection = () => {
               layout="fill"
               objectFit="cover"
               objectPosition="center"
-              alt="eaton-park-map"
+              alt="eaton-park-vison"
               className="rounded-lg overflow-hidden"
             />
           </Link>
+          <Link
+            href="/images/location/thuc-te-eaton-park.webp"
+            data-pswp-width={1597}
+            data-pswp-height={900}
+            rel="noreferrer"
+          />
+          <Link
+            href="/images/location/eaton-park-map-1.webp"
+            data-pswp-width={2240}
+            data-pswp-height={1640}
+            rel="noreferrer"
+          />
           <Link
             href="/images/location/klhtt-rachchiec.webp"
             data-pswp-width={924}
@@ -115,7 +127,7 @@ export const LocationSection = () => {
             rel="noreferrer"
           />
           <Image
-            className="absolute left-[50%] bottom-[28%] w-12 h-6 md:w-24 md:h-12 lg:w-36 lg:h-20 animate__animated animate__bounce animate__infinite"
+            className="absolute left-[50%] bottom-[28%] w-12 h-6 md:w-24 md:h-12 lg:w-36 lg:h-20 animate__animated animate__bounce animate__infinite pointer-events-none"
             src="/icons/pin.svg"
             width="88"
             height="88"

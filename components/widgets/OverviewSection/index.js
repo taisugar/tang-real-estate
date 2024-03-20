@@ -683,10 +683,10 @@ export const OverviewSection = () => {
                         HOTLINE:{" "}
                       </span>
                       <Link
-                        href="tel:0902336848"
+                        href="tel:+84766079191"
                         className="inline-block text-red-500"
                       >
-                        0902336848
+                        0766079191
                       </Link>
                     </b>
                   </p>
