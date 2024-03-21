@@ -3,7 +3,7 @@ import { Layout } from "@/components/common/Layout";
 import { CountSection } from "@/components/widgets/CountSection";
 import { IntroSection } from "@/components/widgets/IntroSection";
 import { LocationSection } from "@/components/widgets/LocationSection";
-import { OurBestHomeSection } from "@/components/widgets/OurBestHomeSection";
+import { ProductionsSection } from "@/components/widgets/ProductionsSection";
 import { OverviewSection } from "@/components/widgets/OverviewSection";
 import { TestimonialSection } from "@/components/widgets/TestimonialSection";
 import Head from "next/head";
@@ -40,9 +40,7 @@ export default function Home() {
         <CountSection />
         <OverviewSection />
         <LocationSection />
-
-        <hr className="mx-[80px]" />
-        <OurBestHomeSection />
+        <ProductionsSection />
         <TestimonialSection />
       </div>
       <AOSPluginsComponent />

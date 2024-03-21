@@ -1,4 +1,4 @@
-import { Icon } from "@iconify/react";
+// import { Icon } from "@iconify/react";
 import Image from "next/image";
 
 export const TestimonialCard = ({
@@ -22,11 +22,12 @@ export const TestimonialCard = ({
           <div className="flex items-center">
             {[...Array(rates)].map((_, idx) => {
               return (
-                <Icon
-                  key={idx}
-                  icon="typcn:star"
-                  className="h-6 w-auto text-yellow"
-                />
+                <span key={idx}>.</span>
+                // <Icon
+                //   key={idx}
+                //   icon="typcn:star"
+                //   className="h-6 w-auto text-yellow"
+                // />
               );
             })}
           </div>

@@ -5,12 +5,8 @@ import { useRef } from "react";
 const navigation = [
   { label: "Giới Thiệu", href: "#intro" },
   { label: "Tổng Quan", href: "#overview" },
-  { label: "Vị Trí", href: "#location" }
-  // {
-  //   label: "Contact",
-  //   href: "",
-  //   target: "_blank"
-  // }
+  { label: "Vị Trí", href: "#location" },
+  { label: "Sản Phẩm", href: "#products" }
 ];
 
 export const Nav = ({ isNavOpen, setIsNavOpen }) => {

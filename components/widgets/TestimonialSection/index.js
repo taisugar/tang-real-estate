@@ -3,7 +3,7 @@ import { LayoutSection } from "@/components/common/Layout/LayoutSection";
 import { TestimonialCard } from "./TestimonialCard";
 import Slider from "react-slick";
 import { useRef } from "react";
-import { Icon } from "@iconify/react";
+// import { Icon } from "@iconify/react";
 import { TESTIMONIAL_DATA, TESTIMONIAL_SETTINGS } from "./utils";
 
 export const TestimonialSection = () => {
@@ -43,18 +43,18 @@ export const TestimonialSection = () => {
 
           <div className="flex w-fit inset-x-0 mx-auto lg:mx-0">
             <button className="inline-flex items-center justify-center w-8 h-8 mr-2 transition-colors duration-150 bg-primary-100 rounded-full focus:shadow-outline hover:bg-primary-200">
-              <Icon
+              {/* <Icon
                 icon="gridicons:arrow-left"
                 className="h-4 w-auto text-primary"
                 onClick={previous}
-              />
+              /> */}
             </button>
             <button className="inline-flex items-center justify-center w-8 h-8 mr-2 transition-colors duration-150 bg-primary rounded-full focus:shadow-outline hover:bg-primary-300">
-              <Icon
+              {/* <Icon
                 icon="gridicons:arrow-right"
                 className="h-4 w-auto text-white"
                 onClick={next}
-              />
+              /> */}
             </button>
           </div>
         </div>

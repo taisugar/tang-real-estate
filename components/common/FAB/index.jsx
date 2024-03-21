@@ -37,7 +37,7 @@ export const FABComponent = () => {
       >
 
         <span className="relative">
-          <span className="absolute animate-ping p-6 bg-primary-200 rounded-full -z-1" />
+          <span className="absolute animate-ping p-5 lg:p-6 bg-primary-200 rounded-full -z-1" />
           <svg
             viewBox="0 0 50 50"
             fill="none"
